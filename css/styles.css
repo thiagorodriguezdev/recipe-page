@@ -1,0 +1,64 @@
+/* RESET CSS */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+:root {
+  --color-rose-800: #7A284E;
+  --color-rose-50: #FFF7FB;
+  --color-stone-900: stone-900;
+  --color-stone-600: #5F564D;
+  --color-stone-150: #E3DDD7;
+  --color-stone-100: #F3E5D7;
+  --color-brown-800: #854632;
+  --color-white: #fff;
+  --text-preset-1: 4rem/100% "Young Serif", serif;
+  --text-preset-2: 2.8rem/100% "Young Serif", serif;
+  --text-preset-3: 600 2rem/100% "Young Serif", serif;
+  --text-preset-4: 1.6rem/150% "Outfit", serif
+  --text-preset-5: bold 1.6rem/150% "Outfit", serif;
+}
+
+.bg-color {
+  width: 100%;
+  background-color: var(--color-stone-100);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 76.6rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.card {
+  background-color: var(--color-white);
+  padding: 4rem;
+}
