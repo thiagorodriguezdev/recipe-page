@@ -39,8 +39,8 @@ a {
   --color-white: #fff;
   --text-preset-1: 4rem/100% "Young Serif", serif;
   --text-preset-2: 2.8rem/100% "Young Serif", serif;
-  --text-preset-3: 600 2rem/100% "Young Serif", serif;
-  --text-preset-4: 1.6rem/150% "Outfit", serif
+  --text-preset-3: 600 2rem/100% "Outfit", serif;
+  --text-preset-4: 1.6rem/150% "Outfit", serif;
   --text-preset-5: bold 1.6rem/150% "Outfit", serif;
 }
 
@@ -56,9 +56,47 @@ a {
   max-width: 76.6rem;
   margin: 0 auto;
   padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .card {
+  width: 100%;
   background-color: var(--color-white);
   padding: 4rem;
+  border-radius: 2.4rem;
+}
+
+.card .card-img {
+  border-radius: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+.card .card-title {
+  width: 100%;
+}
+
+.card .card-title h1 {
+  color: var(--color-stone-900);
+  font: var(--text-preset-1);
+  margin-bottom: 2.4rem;
+}
+
+.card .card-title p {
+  color: var(--color-stone-600);
+  font: var(--text-preset-4);
+  margin-bottom: 3.2rem;
+}
+
+.card .card-preparation {
+  width: 100%;
+  background-color: var(--color-rose-50);
+  padding: 2.4rem;
+}
+
+.card .card-preparation h3 {
+  font: var(--text-preset-3);
+  color: var(--color-rose-800);
+  margin-bottom: 1.6rem;
 }
