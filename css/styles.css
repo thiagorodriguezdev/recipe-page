@@ -28,13 +28,16 @@ a {
   display: inline-block;
 }
 
+/* FIM RESET */
+
+/* INICIO VARIAVEIS */
 :root {
-  --color-rose-800: #7A284E;
-  --color-rose-50: #FFF7FB;
+  --color-rose-800: #7a284e;
+  --color-rose-50: #fff7fb;
   --color-stone-900: stone-900;
-  --color-stone-600: #5F564D;
-  --color-stone-150: #E3DDD7;
-  --color-stone-100: #F3E5D7;
+  --color-stone-600: #5f564d;
+  --color-stone-150: #e3ddd7;
+  --color-stone-100: #f3e5d7;
   --color-brown-800: #854632;
   --color-white: #fff;
   --text-preset-1: 4rem/100% "Young Serif", serif;
@@ -43,6 +46,8 @@ a {
   --text-preset-4: 1.6rem/150% "Outfit", serif;
   --text-preset-5: bold 1.6rem/150% "Outfit", serif;
 }
+
+/* FIM VARIAVEIS */
 
 .bg-color {
   width: 100%;
@@ -93,6 +98,7 @@ a {
   width: 100%;
   background-color: var(--color-rose-50);
   padding: 2.4rem;
+  border-radius: 1.2rem;
 }
 
 .card .card-preparation h3 {
@@ -100,3 +106,52 @@ a {
   color: var(--color-rose-800);
   margin-bottom: 1.6rem;
 }
+
+.card .card-preparation ul {
+  color: var(--color-stone-600);
+  font: var(--text-preset-4);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding-left: 2rem;
+}
+
+.card .card-preparation li::marker {
+  color: var(--color-rose-800);
+}
+
+.card .card-preparation ul li span {
+  color: var(--color-stone-600);
+  font: var(--text-preset-4);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.card .card-ingredients {
+  padding: 3.2rem 0;
+  width: 100%;
+  border-bottom: 1px solid var(--color-stone-150);
+}
+
+.card .card-ingredients h2 {
+  color: var(--color-brown-800);
+  font: var(--text-preset-2);
+  margin-bottom: 2.4rem;
+}
+
+.card .card-ingredients ul {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.card .card-ingredients ul li {
+  color: var(--color-stone-600);
+  font: var(--text-preset-4);
+}
+
+.card .card-ingredients ul li::marker {
+  color: var(--color-brown-800);
+}
+
