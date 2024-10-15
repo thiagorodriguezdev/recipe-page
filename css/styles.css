@@ -63,7 +63,7 @@ a {
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  padding: 128px 0;
 }
 
 .card {
@@ -161,14 +161,14 @@ a {
 }
 
 .card .card-instructions {
-  border-bottom: 1px solid var(--color-stone-150);
+  border-bottom: 0.1rem solid var(--color-stone-150);
   padding-bottom: 3.2rem;
 }
 
 .card .card-instructions h2 {
   color: var(--color-brown-800);
   font: var(--text-preset-2);
-  margin: 3.2rem 0 0 0;
+  margin: 3.2rem 0 2.4rem 0;
 }
 
 .card ol {
@@ -176,7 +176,7 @@ a {
   max-width: 64.8rem;
   color: var(--color-stone-600);
   font: var(--text-preset-4);
-  padding-left: 1.5rem;
+  padding-left: 2rem;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -230,4 +230,16 @@ a {
   color: var(--color-brown-800);
   font: var(--text-preset-4);
   font-weight: 700;
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 0;
+    border: 0;
+  }
+
+  .card-title {
+    color: var(--color-stone-900);
+    font-size: 2rem; 
+  }
 }
